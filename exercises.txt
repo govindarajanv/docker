@@ -1,0 +1,21 @@
+
+Docker Exercises
+================
+
+1	search for the official centos image
+2	pull docker httpd images
+3	list the images that you have pulled
+4	pull and run a hello-world image
+5	run the pulled httpd image in detached mode and check if the container is running
+6	get the history of all docker container which were ran
+7	Inspect the running httpd container and get the ip address
+8	Check if webserver is running
+9	Use whalesay and cowsay to print 'Welcome to the world of containers'
+10	stop the container httpd and inquire it status
+11	restart the container httpd and inquire it status
+12	stop httpd and run httpd container interactively, in the current terminal
+13	stop httpd and run httpd container in detached mode
+14	stop httpd and run httpd container in detached mode with name 'webserver'
+15	start httpd container and attach your terminal to it
+16	execute the command ls on the running container
+17	Remove the docker image

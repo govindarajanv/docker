@@ -1,0 +1,20 @@
+Docker Exercises - Solutions
+============================
+
+1	docker search centos
+2	docker pull httpd:latest
+3	docker images
+4	docker run hello-world:latest	
+5	docker run -d httpd:latest && docker ps
+6	docker ps -a
+7	docker inspect <image id or image name>
+8	curl 172.17.0.2
+9	docker run docker/whalesay cowsay 'Welcome to the world of containers'
+10	docker stop <image id or image name> && docker ps
+11	docker restart <image id or image name>
+12	docker stop <image name> && docker run -it httpd:latest /bin/bash
+13	docker stop <image name> && docker run -d httpd:latest /bin/bash
+14	docker stop <image name> && docker run -d -name="webserver" httpd:latest /bin/bash
+15	docker attach <container id or name>
+16	docker exec  -it webserver /bin/bash
+17	docker rmi <image id or repo:tag>
