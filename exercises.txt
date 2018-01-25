@@ -19,3 +19,14 @@ Docker Exercises
 15	start httpd container and attach your terminal to it
 16	execute the command ls on the running container
 17	Remove the docker image
+18	Perform a port forwarding by installing nginx (dynamic forwarding)
+19	Perform port forwarding by binding to a specific port
+20	Mount a directory in host machine on to the container. use /var/www/html so that index.html is read by httpd in the container
+21	Write a docker file with the following requirements
+	-	download image from debian:stable
+	-	Maintainer should be you
+	-	you have execute apt-get update and upgrade and install apache2 telnet elinks openssh-server on the base image
+	-	export an environment variable PRACTICE=Complete
+	-	expose port 80 in the container to the host
+	-	execute a command in the container 
+

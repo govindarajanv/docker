@@ -18,3 +18,21 @@ Docker Exercises - Solutions
 15	docker attach <container id or name>
 16	docker exec  -it webserver /bin/bash
 17	docker rmi <image id or repo:tag>
+18	docker run -d --name=webserver -P nginx:latest
+	docker ps    // This gives the port dynamically chosen by Docker
+	elinks http://localhost:port
+19	docker port webserver1 #CONTAINERPORT
+	docker run -d -p 8080:80 --name=webserver nginx:latest
+	elinls http://localhost:8080
+20	docker run -d -o 8080:80 --name=webserver -v /home/user/www:/var/www/html httpd:latest
+	clinks http://localhost:8080
+21	FROM debian:stable
+	MAINTAINER govindarajanv <govindarajanv@gmail.com>
+
+	RUN apt-get update && apt-get upgrade -y && apt-get install -y apache2 telnet elinks openssh-server
+
+	ENV MYVALUE my-value
+
+	EXPOSE 80
+
+	CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
