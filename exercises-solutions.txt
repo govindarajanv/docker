@@ -25,7 +25,7 @@ Docker Exercises - Solutions
 	docker run -d -p 8080:80 --name=webserver nginx:latest
 	elinls http://localhost:8080
 20	docker run -d -o 8080:80 --name=webserver -v /home/user/www:/var/www/html httpd:latest
-	clinks http://localhost:8080
+	elinks http://localhost:8080
 21	FROM debian:stable
 	MAINTAINER govindarajanv <govindarajanv@gmail.com>
 
